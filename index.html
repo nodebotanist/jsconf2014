@@ -46,7 +46,7 @@
 					<h1>Modular Architectures in JS</h1>
 				</section>
 
-				<section>
+				<section data-background="img/kitten.jpg">
 					<h2>JS (programming in general) has a fanaticism problem.</h2>
 					<aside class="notes">
 						<ul>
@@ -56,8 +56,8 @@
 					</aside>
 				</section>
 
-				<section>
-					<p>[Picture of a hammer and nail]</p>
+				<section data-background="img/hammer-and-screw.jpg">
+					<p>"When you have a hammer..."</p>
 					<aside class="notes">
 						<ul>
 							<li>Not only do we shun alternatives, we use our favorite tool for everything.</li>
@@ -87,7 +87,8 @@
 				</section>
 
 				<section>
-					<h2>Stop only asking "How is [X] like [my favorite]." Start asking "How will [X] make my code/process/life better?"</h2>
+					<h2>Stop only asking "How is [X] like [my favorite]."</h2>
+					<h2>Start asking "How will [X] make my code/process/life better?"</h2>
 					<aside class="notes">
 						<ul>
 							<li>"How is X like Y" shouldn't be your first qustion.</li>
@@ -96,7 +97,7 @@
 					</aside>
 				</section>
 
-				<section>
+				<section data-background="img/redpanda.jpg">
 					<h2>Be passionate, but not fanatic, about the tools you use.</h2>
 					<aside class="notes">
 						<ul>
@@ -126,6 +127,7 @@
 				</section>
 
 				<section>
+					<img src="img/nathan.gif" alt="But!">
 					<h2>I'm not saying don't use a framework, ever.</h2>
 					<aside class="notes">
 						<ul>
@@ -145,15 +147,58 @@
 				</section>
 
 				<section>
-					<h3>Definition of 'Framework':</h3>
+					<img src="img/facts.gif" alt="Facts!">
+					<p>
+						This is usually where I'm barraged with arguments
+					</p>
+				</section>
+
+				<section data-background="img/spaghetti.jpg">
+					<h2>Modular systems cause spaghetti code!</h2>
+				</section>
+				<section>
+					<ul>
+						<li>Tying together all the modules becomes an unmantainable mess.</li>
+						<li>My favorite framework solves this by including everything OR having a plugin system</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Solution: separate module choices from your code</h2>
+					<ul>
+						<li>Abstraction Layers</li>
+						<li>Functional Mixins</li>
+						<li>Architecture Assistance</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Abstraction Layers</h2>
+					<p>Abstraction layers mean you can swap out modules without editing every reference to that module</p>
+					<p>They also mean you can create a consistent style and language for your code</p>
+					<p>Example: Primus</p>
+				</section>
+
+				<section>
+					<h2>Functional Mixins</h2>
+					<p>Augment your code without creating a direct dependency</p>
+					<img src="img/tweet.png" alt="functonal mixins!">
+				</section>
+
+				<section>
+					<h2>"Architecture Assistance"</h2>
+					<p>Definition of 'Framework':</p>
 					<p>"the basic structure of something : a set of ideas or facts that provide support for something"</p>
+					<p>Some examples: Flight, Backbone, Restify</p>
 					<aside class="notes">
 						<ul>
-							<li>Some frameworks have wandered pretty far from this definition.</li>
-							<li>We should think about how our frameworks provide support, and keep in mind too much can be a burden.</li>
+							<li>When we consider the definition of the word, it makes a little more sense</li>
+							<li>When considering a framework, heavily consider what it's actually giving you: structure? Or a gilded cage?</li>
 						</ul>
 					</aside>
 				</section>
+
+
 
 			</div>
 
