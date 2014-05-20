@@ -6,3 +6,28 @@
   position: absolute;
   bottom: 0;
 }
+
+section img.npm-logo, section img.bower-logo, section img.browserify-logo,
+  section img.requirejs-logo {
+  display:inline-block;
+  border: none;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+section img.npm-logo{
+  float: left;
+  width:40%;
+  background: #fff;
+  margin-top: 15%;
+}
+
+section img.bower-logo{
+  float: right;
+  width:40%;
+}
+
+.requirejs-logo{
+  height: 250px;
+}

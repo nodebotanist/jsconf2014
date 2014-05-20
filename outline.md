@@ -66,9 +66,9 @@ Counter-point:
 
 ## Third-party module management is a nightmare, my framework does this for me.
 
-Argument: "I don't want to have to deal with module upgrades, depracation, and this approach means I'll have to track dozens of modules. My framework does this for me by including all the modules I need."
+Argument: "I don't want to have to deal with module upgrades, depracation, and this approach means I'll have to track dozens of modules."
 
-Example of fanaticism: "During an angular talk: because everything is included, I just minify my angular application; no need to care about all the modules."
+Example of fanaticism: "We need to use a framework because we don't want to keep track of libraries all over the place"
 
 Counter-point:
 
@@ -78,7 +78,7 @@ Counter-point:
   * Build tools like grunt/gulp: automate build tasks, installation tasks, etc.
   * CI tools like TravisCI: notified when modules update/deprecate, keep track of module stability/tests
 * These tools, and others like them, have solved these problems.
-* In fact, in a module-based system, you can easily include, and keep up-to-date, all themodules you need, while removing the ones you don't.
+* In fact, in a module-based system, you can easily include, and keep up-to-date, all the modules you need, while removing the ones you don't.
 
 ## Conclusion
 
