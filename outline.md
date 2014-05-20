@@ -55,6 +55,8 @@ Example of fanaticism: I gave a talk about Flight, and three Ember fans walked u
 
 Counter-point:
 
+* Frameworks often require a lot of buy-in
+  * This can leave new developers in the cold for a long time
 * What if you want/need to bring third-party code into your framework-based app?
   * You sometimes have to fight the framework to do this
   * Especially if the task is considered a core feature

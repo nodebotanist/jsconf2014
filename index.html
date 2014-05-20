@@ -20,6 +20,7 @@
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<link rel="stylesheet" href="css/my-styles.css">
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
 			if( window.location.search.match( /print-pdf/gi ) ) {
@@ -47,7 +48,7 @@
 				</section>
 
 				<section data-background="img/kitten.jpg">
-					<h2>JS (programming in general) has a fanaticism problem.</h2>
+					<h2 class="caption">JS (programming in general) has a fanaticism problem.</h2>
 					<aside class="notes">
 						<ul>
 							<li>We invest in one framework/tool and use it for everything</li>
@@ -57,7 +58,7 @@
 				</section>
 
 				<section data-background="img/hammer-and-screw.jpg">
-					<p>"When you have a hammer..."</p>
+					<p class="caption">"When you have a hammer..."</p>
 					<aside class="notes">
 						<ul>
 							<li>Not only do we shun alternatives, we use our favorite tool for everything.</li>
@@ -88,7 +89,6 @@
 
 				<section>
 					<h2>Stop only asking "How is [X] like [my favorite]."</h2>
-					<h2>Start asking "How will [X] make my code/process/life better?"</h2>
 					<aside class="notes">
 						<ul>
 							<li>"How is X like Y" shouldn't be your first qustion.</li>
@@ -97,8 +97,17 @@
 					</aside>
 				</section>
 
+				<section>
+					<h2>Start asking "How will [X] make my code/process/life better?"</h2>
+					<aside class="notes">
+						<ul>
+							<li>We need to think about tools and modules objectively</li>
+						</ul>
+					</aside>
+				</section>
+
 				<section data-background="img/redpanda.jpg">
-					<h2>Be passionate, but not fanatic, about the tools you use.</h2>
+					<h2 class="caption">Be passionate, but not fanatic, about the tools you use.</h2>
 					<aside class="notes">
 						<ul>
 							<li>There's nothing wrong with being excited about a tool
@@ -154,8 +163,9 @@
 				</section>
 
 				<section data-background="img/spaghetti.jpg">
-					<h2>Modular systems cause spaghetti code!</h2>
+					<h2 class="caption">Argument #1: Modular systems cause spaghetti code!</h2>
 				</section>
+
 				<section>
 					<ul>
 						<li>Tying together all the modules becomes an unmantainable mess.</li>
@@ -189,7 +199,6 @@
 					<h2>"Architecture Assistance"</h2>
 					<p>Definition of 'Framework':</p>
 					<p>"the basic structure of something : a set of ideas or facts that provide support for something"</p>
-					<p>Some examples: Flight, Backbone, Restify</p>
 					<aside class="notes">
 						<ul>
 							<li>When we consider the definition of the word, it makes a little more sense</li>
@@ -198,7 +207,120 @@
 					</aside>
 				</section>
 
+				<section>
+					<h2>Good Examples:</h2>
+					<ul>
+						<li>Flight</li>
+						<li>Backbone</li>
+						<li>Restify</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>These frameworks provide structure without fluff</li>
+							<li>They do their job well and don't get in your way</li>
+						</ul>
+					</aside>
+				</section>
 
+				<section>
+					<h2>What you get</h2>
+					<ul>
+						<li>Swap out modules with minimal work</li>
+						<li>Modify abstraction layer, run the tests, done.</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Change you abstraction layer to match your new module</li>
+							<li>Test your code, run them when you change modules.</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section data-background="img/rube.jpg">
+					<h2 class="caption">Argument #2: My Framework has everything my team needs.</h2>
+				</section>
+
+				<section>
+					<ul>
+						<li>Why would I spend tons of time picking each and every module?</li>
+						<li>Everything moves much quicker when I use a framework</li>
+						<li>My team all speaks the same language this way</li>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>The main argument is time-saving</li>
+							<li>The secondary benefit is everyone programs the same with a a framework</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<p>This is one argument where fanticism really shows.</p>
+					<p>I see it often, myself.</p>
+					<aside class="notes">
+						<ul>
+							<li>The story of the Ember fanatics</li>
+							<li>I gave a talk about Flight</li>
+							<li>An Ember fan comes over not 5 minutes after it</li>
+							<li>They had re-written an example in Ember, and bragged about how short it took.</li>
+							<li>THIS HAS HAPPENED THREE SEPARATE TIMES.</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<img src="img/thumbsup.gif" alt="">
+					<aside class="notes">
+						<ul>
+							<li>My reaction: That's great...but you missed my point.</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<img src="img/halp.gif" alt="">
+					<ul>
+						<li>Frameworks tend to have a steep learning curve</li>
+						<li>This can mean long ramp-ups to productivity</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Devs can become mired- learning the whole framework to understand any part of the application</li>
+							<li>How many files do you have to walk through til your app makes sense?</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Don't hold your application hostage</h2>
+					<ul>
+						<li>Pick the right ool for each task</li>
+						<li>Don't settle for one huge library that does some things you need well at the expense of other tasks.</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Considering pros and cons of a framework reads like hostage negotiation</li>
+							<li>Instead, find the best tool for each task to build great applications</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>[A bunch of slides I haven't written yet.]</h2>
+				</section>
+
+				<section>
+					<img src="img/dancedance.gif" alt="">
+					<h2>Because developer hapiness is contagious</h2>
+				</section>
+
+				<section>
+					<h2>Questions? Comments?</h2>
+					<p>@kassandra_perch</p>
+					<p>kassandra@kassandraperch.com</p>
+					<p>Engineering Evangelist, RetailMeNot</p>
+				</section>
 
 			</div>
 

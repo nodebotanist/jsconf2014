@@ -1,0 +1,8 @@
+.caption{
+  background: rgba(0, 0, 0, .5);
+}
+
+.lower{
+  position: absolute;
+  bottom: 0;
+}
