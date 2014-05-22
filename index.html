@@ -156,8 +156,20 @@
 				</section>
 
 				<section>
-					<h2>POCs</h2>
-					<p>Building a proof on concept allows you to easily </p>
+					<h2>Proof of Concepts</h2>
+					<p>Building a POC allows you to relatively quickly determine the cost-to-benefit ratio of a particular tool.</p>
+					<ul>
+						<li>Write more than 'Hello World'</li>
+						<li>Consider the tasks you need the tool to accomplish</li>
+						<li>Keep your team's eccentricities in mind</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>a proof of concept can save you a lot of time in the long run</li>
+							<li>Just make sure you're actually testing the tool at hand</li>
+							<li>Make sure you keep the weird requirements for your team in mind, and enforce them in your POC.</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -165,10 +177,22 @@
 					<p>
 						This is usually where I'm barraged with arguments
 					</p>
+					<aside class="notes">
+						<ul>
+							<li>I've had this conversation, and this is usually where people stop me.</li>
+							<li>I'm going to present the most common arguments I get, and my counter-points.</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section data-background="img/spaghetti.jpg">
-					<h2 class="caption">Argument #1: Modular systems cause spaghetti code!</h2>
+					<h2 class="caption">Modular systems cause spaghetti code!</h2>
+					<aside class="notes">
+						<ul>
+							<li>This is by far the most common response I get</li>
+							<li>But I feel it's a bit of a knee-jerk reaction</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -176,15 +200,26 @@
 						<li>Tying together all the modules becomes an unmantainable mess.</li>
 						<li>My favorite framework solves this by including everything OR having a plugin system</li>
 					</ul>
+					<aside class="notes">
+						<ul>
+							<li>The main point here is that using a ton of different pieces of code makes an unstandardized mess</li>
+							<li>By using an all-in-one framework, you get the consistency.</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
-					<h2>Solution: separate module choices from your code</h2>
+					<h2>separate module choices from your code</h2>
 					<ul>
 						<li>Abstraction Layers</li>
 						<li>Functional Mixins</li>
 						<li>Architecture Assistance</li>
 					</ul>
+					<aside class="notes">
+						<ul>
+							<li>By separating our code from our modules choices, we can make changes when necessary and move quickly.</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -192,12 +227,22 @@
 					<p>Abstraction layers mean you can swap out modules without editing every reference to that module</p>
 					<p>They also mean you can create a consistent style and language for your code</p>
 					<p>Example: Primus</p>
+					<aside class="notes">
+						<ul>
+							<li></li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
 					<h2>Functional Mixins</h2>
 					<p>Augment your code without creating a direct dependency</p>
-					<img src="img/tweet.png" alt="functonal mixins!">
+					<a href="http://javascriptweblog.wordpress.com/2011/05/31/a-fresh-look-at-javascript-mixins/"><img src="img/tweet.png" alt="functonal mixins!"></a>
+					<aside class="notes">
+						<ul>
+							<li>I can't go into too much detail here, but if you haven't tried them, check out "A fresh look at javascript mixins", by Angus Croll.</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -242,7 +287,12 @@
 				</section>
 
 				<section data-background="img/rube.jpg">
-					<h2 class="caption">Argument #2: My Framework has everything my team needs.</h2>
+					<h2 class="caption">My Framework has everything my team needs.</h2>
+					<aside class="notes">
+						<ul>
+							<li>I get this a lot from people who already have a favorite all-in-one tool/framework</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -255,7 +305,7 @@
 					<aside class="notes">
 						<ul>
 							<li>The main argument is time-saving</li>
-							<li>The secondary benefit is everyone programs the same with a a framework</li>
+							<li>The secondary benefit is everyone writes the same style with a framework</li>
 						</ul>
 					</aside>
 				</section>
@@ -293,6 +343,7 @@
 						<ul>
 							<li>Devs can become mired- learning the whole framework to understand any part of the application</li>
 							<li>How many files do you have to walk through til your app makes sense?</li>
+							<li>Time to first Hello World! metric</li>
 						</ul>
 					</aside>
 				</section>
@@ -312,7 +363,7 @@
 				</section>
 
 				<section data-background='img/falling.gif'>
-					<h2 class="caption">Argument #3: Third-Party module management is a nightmare.</h2>
+					<h2 class="caption">Third-Party module management is a nightmare.</h2>
 					<aside class="notes">
 						<ul>
 							<li>This used to the be the most viable argument.</li>
@@ -338,7 +389,7 @@
 						<ul>
 							<li>Put how you may feel about Bower aside</li>
 							<li>Both of these tools manage your JS packages</li>
-							<li>Easy updating, version locking, module installation</li>
+							<li>Easy updating, version management, module installation</li>
 						</ul>
 					</aside>
 				</section>
@@ -350,13 +401,39 @@
 					<p>(Also, ES6 is coming!)</p>
 					<aside class="notes">
 						<ul>
-							<li>For Node, just use require, of course.</li>
+							<li>For Node, just use require/npm, of course.</li>
 						</ul>
 					</aside>
 				</section>
 
 				<section>
-					<h2>[A bunch of slides I haven't written yet.]</h2>
+					<p>Package management + module loading + CI <br/>=<br/>significant reduction in nightmares</p>
+					<aside class="notes">
+						<ul>
+							<li>We have some work to do still</li>
+							<li>Client-side especially</li>
+							<li>But we've got a lot of the larger problems managable.</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>In conclusion</h2>
+					<ul>
+						<li>Be passionate, not fanatic</li>
+						<li>Be skeptical of large buy-in</li>
+						<li>Pick the right tool for each task</li>
+						<li>If you use a framework, be judicious</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What you get in return</h2>
+					<ul>
+						<li>Abstractions create a common language/way of doing things</li>
+						<li>Everything you need, nothing you don't</li>
+						<li>Self-contained modules === easier, less brittle testing.</li>
+					</ul>
 				</section>
 
 				<section>
